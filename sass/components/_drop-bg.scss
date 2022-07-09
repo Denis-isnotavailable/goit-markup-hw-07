@@ -13,7 +13,7 @@
     @include transitionTwo(opacity, visibility);   
 }
 
-.is-hidden {
+.drop-bg--is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;      
@@ -38,7 +38,7 @@
 
     @include transitionOne(transform);
     
-    .is-hidden & {
+    .drop-bg--is-hidden & {
         transform: translate(-50%, -50%) scale(0.9);
     }
 }

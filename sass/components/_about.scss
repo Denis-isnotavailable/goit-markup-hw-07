@@ -2,6 +2,10 @@
     padding-bottom: 0;
 }
 
+.about__title--visually-hidden {
+    @extend %visually-hidden;
+}
+
 .about__list {
     display: flex;
     /* in case if more items will be added */

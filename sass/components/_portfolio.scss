@@ -1,3 +1,7 @@
+.portfolio__title--visually-hidden {
+    @extend %visually-hidden;
+}
+
 .portfolio-buttons {
     display: flex;
     justify-content: center;
