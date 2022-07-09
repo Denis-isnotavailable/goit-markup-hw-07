@@ -1,0 +1,46 @@
+.team {
+    background-color: #F5F4FA;
+}
+
+.team__title {
+    @extend %studioTitle;
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: calc((100% - 90px) / 4);
+
+    &:not(&:nth-child(4n)) {
+        margin-right: 30px;
+    }
+
+    background-color: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-card__thumb {
+    padding: 30px 32px;
+}
+
+.team-card__title {
+    margin-bottom: 10px;    
+
+    font-weight: 500;
+
+    color: $title-text-color;
+}
+
+.team-card__title,
+.team-card__job-title {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-card__job-title {
+    margin-bottom: 16px;
+}

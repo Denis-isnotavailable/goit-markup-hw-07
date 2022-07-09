@@ -1,0 +1,28 @@
+.social-networks {
+    display: flex;
+
+}
+
+.social-networks__item {
+    width: calc((100% - 30px) / 4);
+    height: 44px;
+}
+
+.social-networks__item:not(.social-networks__item:nth-child(4)) {
+    margin-right: 10px;
+}
+
+.social-networks__link {
+    display: flex;
+    padding: 12px;
+    border-radius: 50%;
+    fill: #afb1b8;
+
+    @include transitionTwo(background-color, fill);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: $white;
+    }
+}
