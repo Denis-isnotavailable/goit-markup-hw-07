@@ -46,7 +46,8 @@
     margin-right: 93px;
 }
 
-.add-us__title {
+.add-us__title,
+.subscribe__title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -61,15 +62,7 @@
 
         // SUBSCRIBE FORM
 
-.subscribe__title {
-    margin-bottom: 20px;
-
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;    
-
-    color: $white;
-}
+    // title added to .add-us__title
 
 .subscribe-form {
     display: flex;
